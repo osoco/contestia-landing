@@ -1,0 +1,23 @@
+section#steps.container
+  h1 #{STEPS.HEAD[lang]}
+  div
+    article
+      +icon-step1()(class='icon')
+      +step(STEPS.STEP1.TAG[lang])
+      h2 #{STEPS.STEP1.TITLE[lang]}
+      p #{STEPS.STEP1.TEXT[lang]}
+
+    article
+      +icon-step2()(class='icon')
+      +step(STEPS.STEP2.TAG[lang])
+      h2 #{STEPS.STEP2.TITLE[lang]}
+      p #{STEPS.STEP2.TEXT[lang]}
+
+    article
+      +icon-step3()(class='icon')
+      +step(STEPS.STEP3.TAG[lang])
+      h2 #{STEPS.STEP3.TITLE[lang]}
+      p #{STEPS.STEP3.TEXT[lang]}
+
+  p #[a( href='#contact' title=STEPS.CTA[lang] class='button') #{STEPS.CTA[lang]} ]
+

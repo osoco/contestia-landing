@@ -1,0 +1,28 @@
+{
+  "HEAD": {
+    "en": "Pricing",
+    "es": "Precio"
+  },
+  "TEXT": {
+    "en": "Our price always fits your needs. ",
+    "es": "Nuestro precio siempre se ajusta a tus necesidades. "
+  },
+  "LINK": {
+    "en": "Call us to get your uncompromised quote",
+    "es": "Pídenos un presupuesto sin compromiso"
+  },
+  "TEXT2": {
+    "en": ", we guarantee you to adjust, whatever your budget.",
+    "es": ", nosotros te garantizamos ajustarnos, sea cual sea tu presupuesto."
+  },
+  "CTA": {
+    "TITLE":{
+      "en": "Ask us for a quote",
+      "es": "Pídanos presupuesto"  
+    },
+    "VALUE":{
+      "en": "Request a quote",
+      "es": "Pedir presupuesto"  
+    }
+  }
+}

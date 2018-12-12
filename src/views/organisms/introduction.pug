@@ -1,0 +1,28 @@
+section#introduction.introduction
+  .container
+    article
+      h1 #{INTRO.HEAD[lang]}
+      p #{INTRO.TEXT[lang]}
+      p #[a( href='#contact' title=INTRO.CTA[lang] class='button') #{INTRO.CTA[lang]} ]
+    section
+      article
+        +icon-contest()(class='icon')
+        h2 #{INTRO.ARTICLE1.TITLE[lang]}
+        p #{INTRO.ARTICLE1.TEXT[lang]}
+      article
+        +icon-hhrr()(class='icon')
+        h2 #{INTRO.ARTICLE2.TITLE[lang]}
+        p #{INTRO.ARTICLE2.TEXT[lang]}
+      article
+        +icon-events()(class='icon')
+        h2 #{INTRO.ARTICLE3.TITLE[lang]}
+        p #{INTRO.ARTICLE3.TEXT[lang]}
+      article
+        +icon-idea()(class='icon')
+        h2 #{INTRO.ARTICLE4.TITLE[lang]}
+        p #{INTRO.ARTICLE4.TEXT[lang]} #[a(href='#contact' title=INTRO.ARTICLE4.LINK[lang]) #{INTRO.ARTICLE4.LINK[lang]}]
+
+    p #[a( href='#contact' title=INTRO.CTA[lang] class='button') #{INTRO.CTA[lang]} ]
+
+
+

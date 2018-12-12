@@ -1,0 +1,58 @@
+{
+  "HEAD": {
+    "en": "Discover everything you can do",
+    "es": "Descubre todo lo que puedes hacer"
+  },
+  "TEXT": {
+    "en": "Contestia is so versatile that it can help you manage different needs",
+    "es": "Contestia es tan versátil que puede ayudarte a gestionar diferentes necesidades"
+  },
+  "ARTICLE1": {
+    "TITLE": {
+      "en": "Contests",
+      "es": "Concursos"
+    },
+    "TEXT": {
+      "en": "Design and manage all the steps of your contest. Access the information of your participants. All from the same tool.",
+      "es": "Diseña y gestiona todos los pasos de tu concurso. Accede a la información de tus participantes. Todo desde la misma herramienta."
+    }
+  },
+  "ARTICLE2": {
+    "TITLE": {
+      "en": "Human Resources",
+      "es": "Recursos Humanos"
+    },
+    "TEXT": {
+      "en": "Design the processes and manage the requests. You can assign reviewers and have a clear vision of everything",
+      "es": "Crea tu proceso de selección, personaliza las diferentes fases y gestiona a tus candidatos de forma sencilla."
+    }
+  },
+  "ARTICLE3": {
+    "TITLE": {
+      "en": "Events",
+      "es": "Eventos"
+    },
+    "TEXT": {
+      "en": "Select the best speakers for your event in a simple way. Simplify the process for your Call for papers.",
+      "es": "Selecciona los mejores ponentes para tu evento de forma sencilla. Simplifica el proceso para tu Call for papers."
+    }
+  },
+  "ARTICLE4": {
+    "TITLE": {
+      "en": "Do you have other idea?",
+      "es": "¿Tienes alguna idea?"
+    },
+    "TEXT": {
+      "en": "Do you have a similar use that does not quite fit with our uses? Do not worry.",
+      "es": "¿Tienes un uso parecido que no encaja del todo con nuestros usos? No te preocupes."
+    },
+    "LINK":{
+      "en": "Contact us",
+      "es": "Contáctanos"
+    }
+  },
+  "CTA": {
+    "en": "Request a demo",
+    "es": "Solicitar una demo"
+  }
+}
