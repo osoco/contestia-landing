@@ -14,14 +14,14 @@ var gulp = require('gulp'),
 // Declare Languages
 var langs = ['es', 'en']
 
-gulp.task('default', ['data', 'css', 'js', 'sw', 'views', 'fonts'], () => {
+gulp.task('default', ['data', 'css', 'js', 'sw', 'views', 'fonts', 'manifest', 'images'], () => {
   browserSync.init({
     server: "./dist"
   });
 
   gulp.watch("src/data/**/*.json}", ['data']);
   gulp.watch("src/fonts/*}", ['fonts']);
-  gulp.watch("src/service-workers/sw.js", ['sw']);
+  gulp.watch("src/scripts/sw/*.js", ['sw']);
   gulp.watch("src/scripts/**/*.js", ['js']);
   gulp.watch("src/scss/**/*.scss", ['css']);
   gulp.watch("src/views/**/*.pug", ['views']);
@@ -91,19 +91,25 @@ gulp.task('views', ['data'], () => {
 });
 
 gulp.task('images', () =>
-  gulp.src('src/img/*')
+  gulp.src('src/img/**/*')
   .pipe(imagemin())
   .pipe(gulp.dest('dist/img/'))
 );
 
 gulp.task('sw', () => {
-  gulp.src('src/service-workers/sw.js')
+  gulp.src('src/scripts/sw/*.js')
+    .pipe(plumberNotifier())
+    .pipe(gulp.dest('dist/'))
+});
+
+gulp.task('manifest', () => {
+  gulp.src('src/manifest.json')
     .pipe(plumberNotifier())
     .pipe(gulp.dest('dist/'))
 });
 
 gulp.task('js', () => {
-  gulp.src('src/scripts/main.js')
+  gulp.src('src/scripts/app.js')
     .pipe(plumberNotifier())
     .pipe(gulp.dest('dist/js/'))
 });
@@ -126,12 +132,12 @@ gulp.task('css', () => {
 gulp.task('watch', () => {
   gulp.watch('src/data/**/*.json', [data])
   gulp.watch('src/fonts/*', [fonts])
-  gulp.watch('src/service-workers/sw.js', [sw]);
+  gulp.watch('src/scripts/sw/*.js', [sw]);
   gulp.watch('src/scripts/**/*.js', [js]);
   gulp.watch('src/scss/**/*.scss', [css]);
   gulp.watch('src/views/**/*.pug', [views]);
 });
 
-gulp.task('build', ['data', 'css', 'js', 'sw', 'views', 'fonts', 'images'], () => {
+gulp.task('build', ['data', 'css', 'js', 'sw', 'views', 'fonts', 'images', 'manifest'], () => {
 
 });

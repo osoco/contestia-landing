@@ -44,6 +44,7 @@
         text-transform: uppercase;
         padding: $spacing-m 0 $spacing-m $spacing-l;
         display: block;
+        white-space: nowrap;
 
         @include breakpoint(tablet) {
           font-size: $tablet-font-size-l;

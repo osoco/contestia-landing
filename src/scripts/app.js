@@ -9,3 +9,8 @@ switch (lang) {
     history.pushState(null, '', '/en/');
     break;
 }
+
+// Register Service Worker
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/sw.js');
+};

@@ -5,6 +5,10 @@
  ***/
  
 .video{
+  iframe{
+    width: 100%;
+    border: 0;
+  }
   @include breakpoint(tablet) {
     position: relative;
     padding: 0 0 57.25% 0;  

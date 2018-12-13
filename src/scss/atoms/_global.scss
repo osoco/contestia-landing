@@ -5,7 +5,7 @@
  *
  ***/
 
- @import "../subatoms/_variables.scss";
+@import "../subatoms/_variables.scss";
 
 html {
   font-family: $font-primary;
@@ -25,10 +25,7 @@ html {
   padding: 0 $layout-xxs;
   position: relative;
 
-  @include breakpoint(tablet) {
-    padding: 0 $layout-s;
-  }
-   @include breakpoint(desktop) {
+  @include breakpoint(wide) {
     padding: 0;
-   }
- }
+  }
+}
